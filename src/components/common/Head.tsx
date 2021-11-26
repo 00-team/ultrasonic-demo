@@ -18,14 +18,13 @@ interface HeadProps {
 }
 
 const defaultProps: HeadProps = {
-    title: 'Evolution Demo',
-    description: 'a Demo for Academy website',
-    url: 'https://evolution-demo-00-team.web.app/',
-    keywords:
-        'Evolution,Evolution Demo,Evolution Academy Page,Evolution Academy',
+    title: 'Ultrasonic Demo',
+    description: 'a Demo for Ultrasonic',
+    url: 'https://ultrasonic-demo-00-team.web.app/',
+    keywords: 'Ultrasonic,Ultrasonic Demo,Ultrasonic Page',
     image: {
-        url: 'https://cdn.discordapp.com/attachments/741696928957464720/910272074512224368/Evolution.jpg',
-        alt: 'Evolution Logo',
+        url: 'https://cdn.discordapp.com/attachments/731174051170746500/814603567704047646/00_logo_f27.png',
+        alt: 'Ultrasonic Logo',
         width: '500',
         height: '500',
         type: 'image/jpeg',
@@ -49,8 +48,8 @@ const Head: FC<HeadProps> = ({
                     <meta property='og:title' content={title} />
                     <title>
                         {title}
-                        {title.search('Evolution Demo') === -1
-                            ? ' | Evolution Demo'
+                        {title.search('Ultrasonic Demo') === -1
+                            ? ' | Ultrasonic Demo'
                             : ''}
                     </title>
                 </Helmet>
@@ -103,7 +102,7 @@ const Head: FC<HeadProps> = ({
             <Helmet>
                 <meta charSet='UTF-8' />
                 {/* open graph protocol */}
-                <meta property='og:site_name' content='Evolution Demo' />
+                <meta property='og:site_name' content='Ultrasonic Demo' />
                 <meta property='og:type' content='website' />
 
                 {/* twitter */}
@@ -112,7 +111,7 @@ const Head: FC<HeadProps> = ({
 
                 <meta
                     name='apple-mobile-web-app-title'
-                    content='Evolution Demo'
+                    content='Ultrasonic Demo'
                 />
                 <meta name='copyright' content='00 Team' />
                 <meta

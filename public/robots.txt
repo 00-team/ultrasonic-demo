@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: *replace-link*/sitemap.xml
+Sitemap: https://ultrasonic-demo-00-team.web.app/sitemap.xml
