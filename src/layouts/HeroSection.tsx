@@ -14,7 +14,7 @@ const HeroSection = () => {
             ></video> */}
             {/* <img src='https://picsum.photos/1920/1080' alt='' /> */}
             <img
-                src='https://i.picsum.photos/id/648/1920/1080.jpg?hmac=VQAoVUtm6qQDEyK-4O26ziH5hlM7IAWdSi-iji9hxms'
+                src='https://i.picsum.photos/id/304/1920/1080.jpg?hmac=UzCQxA0TUIFAJQrUslzw-8Edf3CCNHw0jbj4oX9K12M'
                 alt=''
             />
 
