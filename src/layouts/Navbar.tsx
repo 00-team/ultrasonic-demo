@@ -8,16 +8,16 @@ const Navbar = () => {
         <div className="navbar">
                 <ul className='menu'>
                     <li>
-                        <a href='#!'>Home</a>
+                        <a href='#!'>خانه</a>
                     </li>
                     <li>
-                        <a href='#!'>About</a>
+                        <a href='#!'>دوره ها</a>
                     </li>
                     <li>
-                        <a href='#!'>Contact</a>
+                        <a href='#!'>درباره ما</a>
                     </li>
                     <li>
-                        <a href='#!'>Faq</a>
+                        <a href='#!'>تماس با ما</a>
                     </li>
                 </ul>
         </div>
