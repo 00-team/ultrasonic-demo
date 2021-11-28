@@ -1,0 +1,44 @@
+// italic font
+// @import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&display=swap);
+
+// bold font
+// @import url(https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap);
+
+// main
+// @import url(https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap);
+
+// display
+// @import url(https://fonts.googleapis.com/css2?family=Graduate&display=swap);
+
+//navbar
+// @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+// buttons
+// @import url(https://fontlibrary.org//face/xb-shafigh);
+
+// navbar
+@font-face {
+    font-family: 'IRANSans-Light-web';
+    src: url('./IranSans/IranSans.eot'),
+        url('./IranSans/IranSans.woff2') format('woff2'),
+        url('./IranSans/IranSans.ttf') format('truetype'),
+        url('./IranSans/IranSans.woff') format('woff');
+}
+
+// nastaliq
+@font-face {
+    font-family: 'Nastaliq';
+    src: 
+        url('./nastaliq/IranNastaliq-Web.woff2') format('woff2'),
+        url('./nastaliq/IranNastaliq-Web.ttf') format('truetype'),
+        url('./nastaliq/IranNastaliq-Web.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Shafiq';
+    src: 
+        url('./shafigh/XBShafighRegular.ttf') format('tff'),
+}
+
+// title
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');

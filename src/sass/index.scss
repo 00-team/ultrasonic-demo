@@ -1,0 +1,95 @@
+@use './fonts/config.scss' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+html,body{
+    scroll-behavior: smooth;
+}
+
+body {
+    // overflow-x: overlay;
+    background-color: #fff;
+    color: #fff;
+    position: relative;
+    overflow: overlay;
+}
+// links
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+// buttons
+button {
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h2{
+    color: #202020;
+}
+// scroll bar
+::-webkit-scrollbar {
+    width: 10px;
+    background: #040404;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #272727;
+    border: 2px solid #040404;
+    border-radius: 20px;
+}
+
+// selection
+::selection {
+    color: #fff;
+    background-color: #555;
+}
+
+// font setups
+body {
+    font-family: $MAIN, $BACKUP;
+}
+
+em {
+    font-family: $ITALIC, $BACKUP;
+}
+
+strong {
+    font-family: $BOLD, $BACKUP;
+}
+
+code {
+    font-family: $MONO;
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 80%;
+    background-color: #353535;
+    border-radius: 6px;
+}
+
+.u-hide-visually {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
