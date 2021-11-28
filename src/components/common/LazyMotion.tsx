@@ -84,7 +84,7 @@ export const LazyMotionX = ({ children }: LazyMotionProps) => {
         <motion.div
             className='lazy-div'
             ref={rootRef}
-            initial={{ opacity: 0, x:-100, }}
+            initial={{ opacity: 0, x:-90, }}
             animate={controls}
         >
             {children}
@@ -113,7 +113,7 @@ export const LazyMotionXReverse = ({ children }: LazyMotionProps) => {
         <motion.div
             className='lazy-div'
             ref={rootRef}
-            initial={{ opacity: 0, x: 100 }}
+            initial={{ opacity: 0, x: 90 }}
             animate={controls}
         >
             {children}
