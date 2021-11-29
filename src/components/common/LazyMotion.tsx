@@ -55,7 +55,7 @@ export const LazyMotionY = ({ children }: LazyMotionProps) => {
         <motion.div
             className='lazy-div'
             ref={rootRef}
-            initial={{ opacity: 0, y: 300 }}
+            initial={{ opacity: 0, y: 100 }}
             animate={controls}
         >
             {children}
@@ -75,7 +75,6 @@ export const LazyMotionX = ({ children }: LazyMotionProps) => {
                 transition: {
                     duration: 1,
                     ease: 'easeOut',
-                    delay: 0.5,
                 },
             })
         }
@@ -104,7 +103,6 @@ export const LazyMotionXReverse = ({ children }: LazyMotionProps) => {
                 transition: {
                     duration: 1,
                     ease: 'easeOut',
-                    delay: 0.5,
                 },
             })
         }
