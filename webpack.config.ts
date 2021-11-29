@@ -31,7 +31,7 @@ const BaseConfig: Configs = {
                 },
             },
             {
-                test: /\.(ico)$/i,
+                test: /\.(ico|mp4|webm)$/i,
                 use: [
                     {
                         loader: 'file-loader',
@@ -40,22 +40,6 @@ const BaseConfig: Configs = {
                                 if (path.search('favicon.ico') !== -1)
                                     return 'favicon.ico'
                                 else return 'static/[name].[ext]'
-                            },
-                        },
-                    },
-                ],
-                type: 'javascript/auto',
-            },
-            {
-                test: /\.(mp4)$/i,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: (path: string) => {
-                                if (path.search('favicon.ico') !== -1)
-                                    return 'favicon.ico'
-                                else return 'static/vids/[name].[ext]'
                             },
                         },
                     },
