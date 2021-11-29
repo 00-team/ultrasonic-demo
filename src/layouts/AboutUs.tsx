@@ -4,7 +4,7 @@ import React from 'react'
 // import { GiSoundWaves } from '@react-icons/all-files/gi/GiSoundWaves'
 
 // utils
-import { LazyMotionX, LazyMotionXReverse } from '../components/common/LazyMotion'
+import { LazyMotionX, LazyMotionXReverse, LazyMotionY } from '../components/common/LazyMotion'
 import Bars from '../components/common/Bars'
 
 // style
@@ -14,7 +14,7 @@ const AboutUs = () => {
     return (
         <div className='about'>
             <div className='container'>
-                <LazyMotionX>
+                <LazyMotionY>
                     {/* <h2 id='about' className="title">
                         <GiSoundWaves />
                         درباره ما
@@ -25,7 +25,7 @@ const AboutUs = () => {
                         درباره ما
                         <Bars />
                     </h2>
-                </LazyMotionX>
+                </LazyMotionY>
                 <div className='wrapper'>
                     <LazyMotionX>
                         <div className='item reverse'>
