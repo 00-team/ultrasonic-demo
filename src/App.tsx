@@ -10,6 +10,9 @@ import './sass/fonts/imports.scss'
 // navbar 
 import Navbar from './layouts/Navbar'
 
+// footer 
+import Footer from './layouts/Footer'
+
 // screens
 import Home from './screens/Home'
 
@@ -25,6 +28,7 @@ const App: FC = () => {
             <main aria-label='main content'>
                 <Home />
             </main>
+            <Footer />
         </>
     )
 }
