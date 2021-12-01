@@ -8,6 +8,8 @@
     justify-content: center;
     align-items: center;
 
+    background-position: center center;
+
     .footer-links {
         width: 100%;
         max-width: 1000px;
@@ -29,6 +31,10 @@
                 gap: 3vh;
                 box-sizing: border-box;
 
+                h2{
+                    color: #21e0ad;
+                }
+
                 a {
                     position: relative;
 
@@ -44,7 +50,7 @@
 
                     cursor: pointer;
                     transition: all 300ms ease-in-out;
-                    color: rgba(0, 0, 0, 0.8);
+                    color: snow;
 
                     width: 100%;
 
@@ -53,7 +59,7 @@
                         right: 0;
                         width: 0%;
                         height: 2px;
-                        background-color: red;
+                        background-color: rgb(33, 224, 173);
 
                         transition: all 300ms ease-in-out;
                     }
@@ -63,7 +69,7 @@
                     }
                     &:hover {
                         transform: translateX(-20%);
-                        color: red;
+                        color: rgb(33, 224, 173,0.8);;
                     }
                 }
 
