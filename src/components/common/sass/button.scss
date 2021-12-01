@@ -51,6 +51,7 @@ $active: #696969;
     &:focus {
         box-shadow: 0 0.5em 0.5em -0.4em #1a1a1a;
         transform: translateY(-0.25em);
+        background-color: #0de0bd;
     }
     // &::before {
     //     content: '';
