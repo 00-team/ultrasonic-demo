@@ -3,6 +3,7 @@ import React from 'react'
 // layouts 
 import HeroSection from '../layouts/HeroSection'
 import AboutUs from '../layouts/AboutUs'
+import Blogs from '../layouts/Blogs'
 import ContactUs from '../layouts/ContactUs'
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
         <>
             <HeroSection />
             <AboutUs />
+            <Blogs />
             <ContactUs />
         </>
     )
