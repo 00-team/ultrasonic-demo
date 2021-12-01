@@ -25,6 +25,8 @@
         align-items: center;
         justify-content: space-between;
 
+        overflow: hidden;
+
         .texts {
             display: flex;
             flex-direction: column;
@@ -55,8 +57,9 @@
         .img {
             position: relative;
 
-            height: 60%;
-            width: 71%;
+            height: 410px;
+            width: 1360px;
+
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
