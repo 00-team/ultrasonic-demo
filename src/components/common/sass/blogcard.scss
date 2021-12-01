@@ -17,6 +17,12 @@
     
     direction: rtl;
 
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+        transform: translateY(-10px);
+    }
+
     .top {
         display: flex;
         align-items: center;
