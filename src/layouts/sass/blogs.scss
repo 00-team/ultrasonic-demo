@@ -1,9 +1,13 @@
-.blog{
+.blog {
     min-height: 80vh;
 
-    padding: 1rem 3rem;
+    padding: 2rem 3rem;
 
-    background: #f7f7f7;
+    background: linear-gradient(
+        90deg,
+        rgba(3, 78, 144, 0.9) 0%,
+        rgba(16, 232, 170, 0.9) 100%
+    );
 
     .container {
         display: flex;
@@ -13,5 +17,24 @@
         gap: 5vh;
 
         height: 100%;
+
+        h2.title {
+            font-size: clamp(2rem, 0.7rem + 5vw, 3rem);
+            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 1vw;
+        }
+
+        .wrapper {
+            padding: 2rem 4rem;
+            height: 100%;
+            width: 100%;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 30px;
+            grid-row-gap: 30px;
+        }
     }
 }
