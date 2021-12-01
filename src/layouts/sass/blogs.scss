@@ -1,0 +1,17 @@
+.blog{
+    min-height: 80vh;
+
+    padding: 1rem 3rem;
+
+    background: #f7f7f7;
+
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        gap: 5vh;
+
+        height: 100%;
+    }
+}
