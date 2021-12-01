@@ -26,6 +26,7 @@ const Blogs = () => {
                         <RiArticleFill />
                     </h2>
                 </LazyMotionY>
+                <h4 className="title">اخرین مقالات</h4>
                 <div className='wrapper'>
                     <BlogCard />
                     <BlogCard />
