@@ -1,5 +1,8 @@
 import React, { FC, useState, useEffect } from 'react'
 
+// loadash
+import _uniqueId from 'lodash/uniqueId'
+
 // style
 import './sass/slider.scss'
 
@@ -15,21 +18,23 @@ interface RenderObject {
     index: number
 }
 
-const Transition = (index: number, tr: string = 'none') => {
-    document.querySelector<HTMLDivElement>(
-        'div.cards-container'
-    )!.style.transition = tr
-
-    document.querySelector<HTMLDivElement>(
-        `div.card[data-index="${index}"]`
-    )!.style.transition = tr
-}
-
 const Slider: FC<SliderProps> = ({ children }) => {
     const [Cndex, setCndex] = useState(0)
+    const [UID, setUID] = useState<string | null>(null)
+    // const UID = _uniqueId('U-')
     const [inTimeOut, setinTimeOut] = useState(false)
 
     const [RenderData, setRenderData] = useState<RenderObject[]>([])
+
+    const Transition = (index: number, tr: string = 'none') => {
+        document.querySelector<HTMLDivElement>(
+            `div#CardsConId-${UID}`
+        )!.style.transition = tr
+
+        document.querySelector<HTMLDivElement>(
+            `div#CardId-${UID}[data-index="${index}"]`
+        )!.style.transition = tr
+    }
 
     useEffect(() => {
         setRenderData([
@@ -45,6 +50,8 @@ const Slider: FC<SliderProps> = ({ children }) => {
             { content: children.at(1), index: children.length + 1 },
             { content: children.at(2), index: children.length + 2 },
         ])
+
+        setUID(_uniqueId('U'))
     }, [])
 
     const ChangeCndex = (signal: 1 | -1) => {
@@ -85,6 +92,7 @@ const Slider: FC<SliderProps> = ({ children }) => {
 
             <div className='slider'>
                 <div
+                    id={`CardsConId-${UID}`}
                     className='cards-container'
                     style={{
                         transform: `translateX(calc((${
@@ -96,6 +104,7 @@ const Slider: FC<SliderProps> = ({ children }) => {
                 >
                     {RenderData.map((item, index) => (
                         <div
+                            id={`CardId-${UID}`}
                             key={index}
                             data-index={item.index}
                             className={`card${
