@@ -11,7 +11,7 @@ interface ButtonProps {
     onClick?: (e: React.MouseEvent) => void
     classname?: string
     backgroundColor?: string
-    color? : string
+    color?: string
     borderRadius?: number
     border?: boolean
 }
@@ -27,15 +27,19 @@ const Button = ({
     backgroundColor,
     borderRadius,
     border,
+    color,
 }: ButtonProps) => {
     return (
         <button
             style={{
                 backgroundColor: backgroundColor || 'none',
                 borderRadius: borderRadius || 0,
-                border: border ? '1px solid #fff' : 'none',
+                border: border ? '1px solid #000' : 'none',
+                color: color
             }}
-            className={`basic-button normal-button ${classname ? classname : ''}`}
+            className={`basic-button normal-button ${
+                classname ? classname : ''
+            }`}
             onClick={e => (onClick ? onClick(e) : {})}
         >
             {children}
@@ -72,6 +76,7 @@ export const ButtonWithArrow = ({
     children,
     onClick,
     classname,
+    color,
 }: ButtonProps) => {
     return (
         <button
@@ -79,6 +84,7 @@ export const ButtonWithArrow = ({
                 classname ? classname : ''
             }`}
             onClick={e => (onClick ? onClick(e) : {})}
+            style={{ color: color }}
         >
             <div className='icon-arrow before'>
                 <HiOutlineArrowNarrowRight />
@@ -91,21 +97,20 @@ export const ButtonWithArrow = ({
     )
 }
 
-export const ButtonWithBorder = ({ children, onClick, classname }: ButtonProps) => {
+export const ButtonWithBorder = ({
+    children,
+    onClick,
+    classname,
+}: ButtonProps) => {
     return (
         <button
-            className={`btn hover-border-11 ${
-                classname ? classname : ''
-            }`}
+            className={`btn hover-border-11 ${classname ? classname : ''}`}
             onClick={e => (onClick ? onClick(e) : {})}
         >
             <span> {children} </span>
         </button>
     )
 }
-
-
-
 
 Button.defaultProps = defaultProps
 

@@ -1,9 +1,18 @@
 import React from 'react'
-import { LazyMotionY } from '../components/common/LazyMotion'
-import { ButtonWithBackGround } from '../components/common/Button'
+
+// comps
+// import { ButtonWithBackGround } from '../components/common/Button'
+
+// utils
+import {
+    LazyMotionY,
+    LazyMotionX,
+    LazyMotionXReverse,
+} from '../components/common/LazyMotion'
 
 // video
-import video from '../../static/vids/demo.webm'
+// import video from '../../static/vids/demo.webm'
+import img from '../../static/imgs/hero.png'
 
 // style
 import './sass/herosection.scss'
@@ -11,32 +20,27 @@ import './sass/herosection.scss'
 const HeroSection = () => {
     return (
         <div className='hero-container'>
-            <video src={video} controls></video>
-            {/* <img src='https://picsum.photos/1920/1080' alt='' /> */}
-            <img
-                src='https://i.picsum.photos/id/304/1920/1080.jpg?hmac=UzCQxA0TUIFAJQrUslzw-8Edf3CCNHw0jbj4oX9K12M'
-                alt=''
-            />
-
-            <LazyMotionY>
-                <div className='card'>
-                    <p className='title'>اولتراسونیک</p>
-                    <p className='description'>با استاد خسرویان</p>
-                    <div className='btns'>
-                        <ButtonWithBackGround borderRadius={3} border={true}>
-                            التراسونیک چیست
-                        </ButtonWithBackGround>
-
-                        <ButtonWithBackGround borderRadius={3} border={true}>
-                            دوره ها
-                        </ButtonWithBackGround>
-
-                        <ButtonWithBackGround borderRadius={3} border={true}>
-                            سوالات متداول
-                        </ButtonWithBackGround>
-                    </div>
+            <div className='content'>
+                <div className='texts'>
+                    <LazyMotionXReverse>
+                        <div className='title'>التروسونیک با استاد خسرویان</div>
+                    </LazyMotionXReverse>
+                    <LazyMotionX>
+                        <h1 className='description'>
+                            ثبت نام <br />
+                            دوره های انلاین <br />و کلاس های حضوری
+                        </h1>
+                    </LazyMotionX>
                 </div>
-            </LazyMotionY>
+                <LazyMotionY>
+                    <div
+                        className='img'
+                        style={{
+                            backgroundImage: `url(${img})`,
+                        }}
+                    ></div>
+                </LazyMotionY>
+            </div>
         </div>
     )
 }

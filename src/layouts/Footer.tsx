@@ -7,12 +7,18 @@ import {
     LazyMotionY,
 } from '../components/common/LazyMotion'
 
+
+// bg image 
+import img from "../../static/imgs/footer.jpg"
+
 // style
 import './sass/footer.scss'
 
 const Footer = () => {
     return (
-        <div className='footer'>
+        <div className='footer' style={{
+            backgroundImage: `url(${img})`,
+        }}>
             <div className='footer-links'>
                 <div className='footer-link-wrapper'>
                     <LazyMotionXReverse>
