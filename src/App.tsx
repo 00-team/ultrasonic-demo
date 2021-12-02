@@ -1,4 +1,8 @@
-import React, { FC } from 'react'
+import React, { FC, useEffect } from 'react'
+
+// redux stuff 
+import { useDispatch } from 'react-redux'
+import { AppTypes } from './redux/models/App'
 
 // commons
 import Head from './components/common/Head'
@@ -21,6 +25,16 @@ interface AppProps {}
 const defaultProps: AppProps = {}
 
 const App: FC = () => {
+
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch({ type: AppTypes.SET_WINWID, payload: window.pageYOffset })
+        window.onscroll = () => {
+            dispatch({ type: AppTypes.SET_WINWID, payload: window.pageYOffset })
+        }
+    }, [dispatch])
+
     return (
         <>
             <Head />
