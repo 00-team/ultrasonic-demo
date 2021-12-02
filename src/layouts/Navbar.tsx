@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 import { IoMdHome } from '@react-icons/all-files/io/IoMdHome';
 import { AiOutlineFundProjectionScreen } from '@react-icons/all-files/ai/AiOutlineFundProjectionScreen';
 import { MdGroup } from '@react-icons/all-files/md/MdGroup';
+import {FiPhoneCall} from "@react-icons/all-files/fi/FiPhoneCall";
 
 // redux 
 import { useSelector } from 'react-redux'
@@ -43,7 +44,9 @@ const Navbar = () => {
                     </a>
                 </li>
                 <li>
-                    <a href='#!'>تماس با ما</a>
+                    <a href='#!'>
+                        تماس با ما <FiPhoneCall />
+                    </a>
                 </li>
             </ul>
         </div>
