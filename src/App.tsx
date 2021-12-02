@@ -10,7 +10,7 @@ import Head from './components/common/Head'
 import { Routes, Route } from 'react-router-dom'
 
 // components
-import Slider from './components/slider'
+import Slider from './components/slider/Slider'
 
 // main styles
 import './sass/index.scss'
@@ -47,14 +47,13 @@ const App: FC = () => {
             <Head />
 
             <main aria-label='main content'>
+                <Navbar />
                 <Routes>
                     <Route
                         path='/'
                         element={
                             <>
-                                <Navbar />
                                 <Home />
-                                <Footer />
                             </>
                         }
                     />
@@ -70,6 +69,7 @@ const App: FC = () => {
                         }
                     />
                 </Routes>
+                <Footer />
             </main>
         </>
     )
