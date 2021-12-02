@@ -7,18 +7,25 @@ import { AppTypes } from './redux/models/App'
 // commons
 import Head from './components/common/Head'
 
-// main styles 
+import { Routes, Route } from 'react-router-dom'
+
+// components
+import Slider from './components/slider'
+
+// main styles
 import './sass/index.scss'
 import './sass/fonts/imports.scss'
 
-// navbar 
+// navbar
 import Navbar from './layouts/Navbar'
 
-// footer 
+// footer
 import Footer from './layouts/Footer'
 
 // screens
 import Home from './screens/Home'
+
+const BaseData = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
 
 interface AppProps {}
 
@@ -38,11 +45,32 @@ const App: FC = () => {
     return (
         <>
             <Head />
-            <Navbar />
+
             <main aria-label='main content'>
-                <Home />
+                <Routes>
+                    <Route
+                        path='/'
+                        element={
+                            <>
+                                <Navbar />
+                                <Home />
+                                <Footer />
+                            </>
+                        }
+                    />
+
+                    <Route
+                        path='/test'
+                        element={
+                            <Slider>
+                                {BaseData.map((item, index) => (
+                                    <div key={index}>{item}</div>
+                                ))}
+                            </Slider>
+                        }
+                    />
+                </Routes>
             </main>
-            <Footer />
         </>
     )
 }
