@@ -23,7 +23,7 @@ const HeroSection = () => {
             <div className='content'>
                 <div className='texts'>
                     <LazyMotionXReverse>
-                        <div className='title'>التروسونیک با استاد خسرویان</div>
+                        <div className='title'>اولتراسونیک با استاد خسرویان</div>
                     </LazyMotionXReverse>
                     <LazyMotionX>
                         <h1 className='description'>
