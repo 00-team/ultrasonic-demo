@@ -88,9 +88,9 @@ const Slider: FC<SliderProps> = ({ children }) => {
                     className='cards-container'
                     style={{
                         transform: `translateX(calc((${
-                            children.length * 450
-                        }px + ${children.length - 1}rem) / 2 - (450px / 2) + ${
-                            Cndex * -450
+                            children.length * 600
+                        }px + ${children.length - 1}rem) / 2 - (600px / 2) + ${
+                            Cndex * -600
                         }px - ${Cndex * 1}rem))`,
                     }}
                 >
