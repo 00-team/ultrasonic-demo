@@ -53,8 +53,7 @@
                 transition: transform 200ms;
 
                 // basic debug style
-                background-color: limegreen;
-                border: 3px solid red;
+                // background-color: limegreen;
 
                 // just for displaying the numbers (debug)
                 display: grid;
@@ -62,12 +61,16 @@
                 color: #000;
                 font-size: 3rem;
 
-                // card size
-                @include box(450px);
+                border-radius: 5px;
 
-                &.C {
-                    transform: scale(1);
-                }
+                overflow: hidden;
+
+                // card size
+                @include box(600px,400px);
+
+                // &.C {
+                //     transform: scale(1);
+                // }
             }
         }
 
