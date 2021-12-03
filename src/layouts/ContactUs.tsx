@@ -21,7 +21,7 @@ const ContactUs = () => {
         <div className='contact'>
             <div className='container'>
                 <LazyMotionY>
-                    <h2 className='title'>
+                    <h2 className='title' id="contact">
                         <FiPhoneCall />
                         تماس با ما
                         <FiPhoneCall />
@@ -33,25 +33,25 @@ const ContactUs = () => {
                         <LazyMotionX>
                             <a className='social-icon call'>
                                 <FiPhoneCall className='icon-svg' />
-                                <div className='tooltip'>PhoneCall</div>
+                                <div className='tooltip'>09120974956</div>
                             </a>
                         </LazyMotionX>
                         <LazyMotionY>
                             <a className='social-icon instagram'>
                                 <IoLogoInstagram className='icon-svg' />
-                                <div className='tooltip'>Instagram</div>
+                                <div className='tooltip'>@Sadra_Tghvi</div>
                             </a>
                         </LazyMotionY>
                         <LazyMotionY>
                             <a className='social-icon facebook'>
                                 <SiWhatsapp className='icon-svg' />
-                                <div className='tooltip'>Whatsapp</div>
+                                <div className='tooltip'>09120974956</div>
                             </a>
                         </LazyMotionY>
                         <LazyMotionXReverse>
                             <a className='social-icon tel'>
                                 <SiTelegram className='icon-svg' />
-                                <div className='tooltip'>Telegram</div>
+                                <div className='tooltip'>@sadrataghavi3</div>
                             </a>
                         </LazyMotionXReverse>
                     </div>
