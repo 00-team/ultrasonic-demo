@@ -29,22 +29,22 @@ const Navbar = () => {
         <div className={`navbar ${Active ? 'active' : ''}`}>
             <ul className='menu'>
                 <li>
-                    <a href='#!'>
+                    <a href='#'>
                         خانه <IoMdHome />
                     </a>
                 </li>
                 <li>
-                    <a href='#!'>
+                    <a href='#videos'>
                         دوره ها <AiOutlineFundProjectionScreen />{' '}
                     </a>
                 </li>
                 <li>
-                    <a href='#!'>
+                    <a href='#about'>
                         درباره ما <MdGroup  />
                     </a>
                 </li>
                 <li>
-                    <a href='#!'>
+                    <a href='#contact'>
                         تماس با ما <FiPhoneCall />
                     </a>
                 </li>
