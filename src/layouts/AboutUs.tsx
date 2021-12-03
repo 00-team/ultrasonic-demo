@@ -3,8 +3,18 @@ import React from 'react'
 // icons
 // import { GiSoundWaves } from '@react-icons/all-files/gi/GiSoundWaves'
 
+// imgs 
+import education from "../../static/imgs/education.jpg"
+import work from '../../static/imgs/work.jpg'
+import students from '../../static/imgs/students.jpg'
+import videos from '../../static/imgs/videos.jpg'
+
 // utils
-import { LazyMotionX, LazyMotionXReverse, LazyMotionY } from '../components/common/LazyMotion'
+import {
+    LazyMotionX,
+    LazyMotionXReverse,
+    LazyMotionY,
+} from '../components/common/LazyMotion'
 import Bars from '../components/common/Bars'
 
 // style
@@ -15,11 +25,6 @@ const AboutUs = () => {
         <div className='about'>
             <div className='container'>
                 <LazyMotionY>
-                    {/* <h2 id='about' className="title">
-                        <GiSoundWaves />
-                        درباره ما
-                        <GiSoundWaves />
-                    </h2> */}
                     <h2 id='about' className='title'>
                         <Bars />
                         درباره ما
@@ -31,12 +36,13 @@ const AboutUs = () => {
                         <div className='item reverse'>
                             <div className='img'>
                                 <img
-                                    src='https://picsum.photos/1920/1080'
+                                    // src='https://picsum.photos/1920/1080'
+                                    src={education}
                                     alt=''
                                 />
                             </div>
                             <div className='text'>
-                                <div className='header'>تحصیلات</div>
+                                <div className='header'>تحصیلات </div>
                                 <p className='description'>
                                     {' '}
                                     ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
@@ -63,12 +69,13 @@ const AboutUs = () => {
                         <div className='item'>
                             <div className='img'>
                                 <img
-                                    src='https://picsum.photos/1920/1080'
+                                    // src='https://picsum.photos/1920/1080'
+                                    src={work}
                                     alt=''
                                 />
                             </div>
                             <div className='text'>
-                                <div className='header'>تحصیلات</div>
+                                <div className='header'>سابقه کار </div>
                                 <p className='description'>
                                     {' '}
                                     ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
@@ -95,12 +102,13 @@ const AboutUs = () => {
                         <div className='item reverse'>
                             <div className='img'>
                                 <img
-                                    src='https://picsum.photos/1920/1080'
+                                    // src='https://picsum.photos/1920/1080'
+                                    src={students}
                                     alt=''
                                 />
                             </div>
                             <div className='text'>
-                                <div className='header'>تحصیلات</div>
+                                <div className='header'>دانش اموزان برتر </div>
                                 <p className='description'>
                                     {' '}
                                     ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
@@ -127,12 +135,13 @@ const AboutUs = () => {
                         <div className='item'>
                             <div className='img'>
                                 <img
-                                    src='https://picsum.photos/1920/1080'
+                                    // src='https://picsum.photos/1920/1080'
+                                    src={videos}
                                     alt=''
                                 />
                             </div>
                             <div className='text'>
-                                <div className='header'>تحصیلات</div>
+                                <div className='header'>دوره </div>
                                 <p className='description'>
                                     {' '}
                                     ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
